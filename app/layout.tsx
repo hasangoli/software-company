@@ -1,8 +1,8 @@
 import './globals.scss';
 
 export const metadata = {
-  title: 'BOARD',
-  description: 'Let your mind explore new world',
+  title: 'Courtney Lanka',
+  description: 'Building Dev Team, Quickly and Affordably',
 };
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='bg-primary'>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

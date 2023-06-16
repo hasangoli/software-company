@@ -1,12 +1,13 @@
 {
-  "name": "board",
+  "name": "Courtney Lanka",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "git": "git add . && git commit -m \"Updated!\" && git pull && git push"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
