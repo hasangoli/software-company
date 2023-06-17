@@ -1,4 +1,12 @@
+import { Header } from '@/components/Layout/Header';
 import './globals.scss';
+
+import localFont from 'next/font/local';
+
+const myFont = localFont({
+  src: './Poppins-Regular.ttf',
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'Courtney Lanka',
@@ -11,8 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body>{children}</body>
+    <html lang='en' className={myFont.className}>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

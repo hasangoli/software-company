@@ -12,6 +12,7 @@ module.exports = {
       gray: 'rgb(249, 249, 249)',
       white: 'rgb(255 ,255 ,255)',
       black: 'rgb(0 ,0 ,0)',
+      transparent: 'rgba(0, 0, 0, 0)',
     },
     extend: {
       backgroundImage: {
