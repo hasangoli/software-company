@@ -12,7 +12,11 @@ export const ImageProvider: FC<ImagePropsType> = ({
   return (
     <div
       className='relative'
-      style={{ height: height, width: width, aspectRatio: aspectRatio }}
+      style={{
+        height: height ? height : 'auto',
+        width: width,
+        aspectRatio: aspectRatio ? aspectRatio : 'unset',
+      }}
     >
       <Image src={src} alt={alt} fill />
     </div>

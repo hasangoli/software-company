@@ -4,9 +4,10 @@ import { MenuItemType } from '@/types';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Button, Drawer } from '@mui/material';
+import Link from 'next/link';
 import { useState } from 'react';
-import { CustomLink } from '../Global/CustomLink';
-import { ImageProvider } from '../Global/ImageProvider';
+import { CustomLink } from '../global/CustomLink';
+import { ImageProvider } from '../global/ImageProvider';
 import { MenuLi } from './MenuLi';
 
 export const Header = () => {
@@ -55,12 +56,14 @@ export const Header = () => {
   return (
     <header>
       <div className='flex items-center justify-between p-3'>
-        <ImageProvider
-          src='/assets/images/logo.png'
-          alt='logo'
-          width='150px'
-          aspectRatio={141 / 59}
-        />
+        <Link href='/'>
+          <ImageProvider
+            src='/assets/images/logo.png'
+            alt='logo'
+            width='150px'
+            aspectRatio={141 / 59}
+          />
+        </Link>
         <Button
           className='hover:bg-transparent'
           onClick={(): void => setToggleDrawer(true)}
