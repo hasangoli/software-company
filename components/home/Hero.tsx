@@ -3,7 +3,7 @@ import { ImageProvider } from '../global/ImageProvider';
 
 export const Hero = () => {
   return (
-    <div>
+    <section className='container'>
       <div className='rounded-bl-[8rem] overflow-hidden mb-5'>
         <ImageProvider
           src='/assets/images/hero.jpg'
@@ -27,6 +27,6 @@ export const Hero = () => {
         </p>
         <CustomLink title='Build a team' href='/' />
       </div>
-    </div>
+    </section>
   );
 };

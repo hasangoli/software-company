@@ -23,6 +23,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <div className='h-[500px]'></div>
       </body>
     </html>
   );
