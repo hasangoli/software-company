@@ -7,14 +7,21 @@ import { Swiper } from 'swiper/react';
 import '../../styles/CustomSwiper.scss';
 
 export const CustomSwiper = ({
+  className,
   children,
 }: {
+  className?: string;
   children: JSX.Element | JSX.Element[];
 }) => {
   return (
     <Swiper
+      loop={true}
       slidesPerView={1}
-      autoplay={{ delay: 2500 }}
+      autoplay={{
+        delay: 2500,
+        pauseOnMouseEnter: false,
+        disableOnInteraction: false,
+      }}
       pagination={{
         clickable: true,
         renderBullet: (index, className): string => {
@@ -22,6 +29,7 @@ export const CustomSwiper = ({
         },
       }}
       modules={[Pagination]}
+      className={className}
     >
       {children}
     </Swiper>

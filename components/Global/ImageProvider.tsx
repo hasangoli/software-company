@@ -8,10 +8,11 @@ export const ImageProvider: FC<ImagePropsType> = ({
   width,
   height,
   aspectRatio,
+  className,
 }) => {
   return (
     <div
-      className='relative'
+      className={`relative ${className ? className : ''}`}
       style={{
         height: height ? height : 'auto',
         width: width,

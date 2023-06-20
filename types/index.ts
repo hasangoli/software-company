@@ -14,9 +14,22 @@ export interface ImagePropsType {
   width: string;
   height?: string;
   aspectRatio?: number;
+  className?: string;
 }
 
 export interface CustomLinkPropsTypes {
   title: string;
   href: string;
+}
+
+export interface SolutionProps {
+  image: string;
+  title: string;
+  description: string;
+}
+
+export interface ProcessProps {
+  number: string;
+  image: string;
+  title: string;
 }
