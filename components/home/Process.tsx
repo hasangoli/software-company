@@ -1,7 +1,7 @@
 import { ProcessProps } from '@/types';
 import { ImageProvider } from '../global/ImageProvider';
 
-export const Process = ({ data }: { data: ProcessProps }) => {
+export const Process = ({ data }: { data: ProcessProps }): JSX.Element => {
   return (
     <div className='flex flex-col items-center justify-center mt-12'>
       <ImageProvider

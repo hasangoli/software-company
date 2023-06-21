@@ -1,30 +1,21 @@
+import { hero } from '@/types';
 import { CustomLink } from '../global/CustomLink';
 import { ImageProvider } from '../global/ImageProvider';
 
-export const Hero = () => {
+export const Hero = ({ data }: { data: hero }): JSX.Element => {
   return (
     <section className='container'>
       <div className='rounded-bl-[8rem] overflow-hidden mb-5'>
         <ImageProvider
-          src='/assets/images/hero.jpg'
-          alt='hero'
+          src={data?.image}
+          alt={data?.title}
           width='100%'
           aspectRatio={16 / 9}
         />
       </div>
       <div className='p-5'>
-        <h1 className='text-4xl mb-5 text-primary font-black'>
-          Building dev team,
-          <br />
-          Quickly and
-          <br />
-          Affordably
-        </h1>
-        <p className='text-xl mb-8'>
-          We specialize in helping you build a team of expert developers,
-          testers, and leaders. We are setup to deliver long term solutions, or
-          scale to different needs quickly.
-        </p>
+        <h1 className='text-4xl mb-5 text-primary font-black'>{data?.title}</h1>
+        <p className='text-xl mb-8'>{data?.description}</p>
         <CustomLink title='Build a team' href='/' />
       </div>
     </section>

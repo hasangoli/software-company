@@ -12,15 +12,15 @@ export const CustomSwiper = ({
 }: {
   className?: string;
   children: JSX.Element | JSX.Element[];
-}) => {
+}): JSX.Element => {
   return (
     <Swiper
       loop={true}
       slidesPerView={1}
       autoplay={{
         delay: 2500,
-        pauseOnMouseEnter: false,
         disableOnInteraction: false,
+        pauseOnMouseEnter: false,
       }}
       pagination={{
         clickable: true,

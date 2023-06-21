@@ -5,7 +5,10 @@ import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import Link from 'next/link';
 import { FC } from 'react';
 
-export const CustomLink: FC<CustomLinkPropsTypes> = ({ title, href }) => {
+export const CustomLink: FC<CustomLinkPropsTypes> = ({
+  title,
+  href,
+}): JSX.Element => {
   return (
     <Link
       href={href}

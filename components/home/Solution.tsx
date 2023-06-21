@@ -1,9 +1,15 @@
 import { SolutionProps } from '@/types';
 import { ImageProvider } from '../global/ImageProvider';
 
-export const Solution = ({ data }: { data: SolutionProps }) => {
+export const Solution = ({
+  data,
+  center,
+}: {
+  data: SolutionProps;
+  center?: boolean;
+}): JSX.Element => {
   return (
-    <div className='flex flex-col'>
+    <div className={`flex flex-col ${center ? 'text-center' : ''}`}>
       <ImageProvider
         src={data?.image}
         alt={data?.title}

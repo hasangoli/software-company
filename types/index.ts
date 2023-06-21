@@ -17,6 +17,12 @@ export interface ImagePropsType {
   className?: string;
 }
 
+export interface hero {
+  image: string;
+  title: string;
+  description: string;
+}
+
 export interface CustomLinkPropsTypes {
   title: string;
   href: string;
@@ -32,4 +38,23 @@ export interface ProcessProps {
   number: string;
   image: string;
   title: string;
+}
+
+export interface header {
+  logo: string;
+  data: MenuItemType[];
+}
+
+export interface solutionsData {
+  title: string;
+  mainTitle: string;
+  description: string;
+  data: SolutionProps[];
+}
+
+export interface processesData {
+  title: string;
+  mainTitle: string;
+  description: string;
+  data: ProcessProps[];
 }

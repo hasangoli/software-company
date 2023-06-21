@@ -1,6 +1,6 @@
 'use client';
 
-import { MenuItemType } from '@/types';
+import { MenuItemType, header } from '@/types';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Button, Drawer } from '@mui/material';
@@ -10,47 +10,7 @@ import { CustomLink } from '../global/CustomLink';
 import { ImageProvider } from '../global/ImageProvider';
 import { MenuLi } from './MenuLi';
 
-export const Header = () => {
-  const menuItems: MenuItemType[] = [
-    {
-      title: 'How to start',
-      href: '/',
-      hasBg: true,
-    },
-    {
-      title: 'Services',
-      href: '/',
-      children: [
-        {
-          title: 'Test 1',
-          href: '/',
-        },
-        {
-          title: 'Test 2',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Technologies',
-      href: '/',
-      children: [
-        {
-          title: 'Test 1',
-          href: '/',
-        },
-        {
-          title: 'Test 2',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Careers',
-      href: '/',
-    },
-  ];
-
+export const Header = ({ data }: { data: header }): JSX.Element => {
   const [toggleDrawer, setToggleDrawer] = useState<boolean>(false);
 
   return (
@@ -58,7 +18,7 @@ export const Header = () => {
       <div className='flex items-center justify-between p-3'>
         <Link href='/'>
           <ImageProvider
-            src='/assets/images/logo.png'
+            src={data?.logo}
             alt='logo'
             width='150px'
             aspectRatio={141 / 59}
@@ -66,7 +26,7 @@ export const Header = () => {
         </Link>
         <Button
           className='hover:bg-transparent'
-          onClick={(): void => setToggleDrawer(true)}
+          onClick={() => setToggleDrawer(true)}
         >
           <MenuIcon className='text-primary' fontSize='large' />
         </Button>
@@ -88,7 +48,7 @@ export const Header = () => {
         </div>
         <nav className='w-screen h-screen px-10'>
           <ul>
-            {menuItems?.map((item: MenuItemType, i: number) => (
+            {data?.data?.map((item: MenuItemType, i: number) => (
               <MenuLi item={item} key={i} />
             ))}
           </ul>

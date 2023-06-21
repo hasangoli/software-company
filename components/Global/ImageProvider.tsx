@@ -9,7 +9,7 @@ export const ImageProvider: FC<ImagePropsType> = ({
   height,
   aspectRatio,
   className,
-}) => {
+}): JSX.Element => {
   return (
     <div
       className={`relative ${className ? className : ''}`}

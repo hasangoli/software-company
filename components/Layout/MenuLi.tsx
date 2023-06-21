@@ -5,7 +5,7 @@ import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownR
 import Link from 'next/link';
 import { useState } from 'react';
 
-export const MenuLi = ({ item }: { item: MenuItemType }) => {
+export const MenuLi = ({ item }: { item: MenuItemType }): JSX.Element => {
   const [toggleItem, setToggleItem] = useState<boolean>(false);
 
   return (

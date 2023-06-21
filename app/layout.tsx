@@ -1,6 +1,7 @@
 import { Header } from '@/components/layout/Header';
 import './globals.scss';
 
+import { header } from '@/const';
 import localFont from 'next/font/local';
 
 const myFont = localFont({
@@ -13,18 +14,19 @@ export const metadata = {
   description: 'Building Dev Team, Quickly and Affordably',
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}): JSX.Element => {
   return (
     <html lang='en' className={myFont.className}>
       <body>
-        <Header />
+        <Header data={header} />
         {children}
-        <div className='h-[500px]'></div>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
