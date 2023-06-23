@@ -19,6 +19,9 @@ module.exports = {
         gradient:
           'linear-gradient(90deg, rgb(255, 153, 0) 0%, rgb(242, 203, 0) 100%)',
       },
+      boxShadow: {
+        custom: '0 0 8px -3px rgba(0, 0, 0, 0.3)',
+      },
     },
   },
   plugins: [],

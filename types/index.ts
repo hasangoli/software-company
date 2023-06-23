@@ -58,3 +58,18 @@ export interface processesData {
   description: string;
   data: ProcessProps[];
 }
+
+export interface SpecializedProps {
+  image: string;
+  title: string;
+}
+
+export interface SpecializedItemProps {
+  items: SpecializedProps[];
+}
+
+export interface SpecializedDataProps {
+  title: string;
+  mainTitle: string;
+  data: SpecializedItemProps[];
+}

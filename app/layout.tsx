@@ -5,8 +5,38 @@ import { header } from '@/const';
 import localFont from 'next/font/local';
 
 const myFont = localFont({
-  src: './Poppins-Regular.ttf',
-  display: 'swap',
+  src: [
+    {
+      path: './Poppins-ExtraLight.ttf',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: './Poppins-Light.ttf',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: './Poppins-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './Poppins-Bold.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './Poppins-ExtraBold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './Poppins-Black.ttf',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
 });
 
 export const metadata = {

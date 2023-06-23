@@ -135,7 +135,108 @@ export const expertise = {
 };
 
 export const specialized = {
-  title: '',
-  mainTitle: '',
-  data: [],
+  title: 'Specialized',
+  mainTitle: 'Specialized Staff We Provide',
+  data: [
+    {
+      items: [
+        {
+          image: '/assets/images/spec01.png',
+          title: 'Frontend Engineers',
+        },
+        {
+          image: '/assets/images/spec02.png',
+          title: 'Fullstack Engineers',
+        },
+        {
+          image: '/assets/images/spec03.png',
+          title: 'UI/UX Engineers',
+        },
+        {
+          image: '/assets/images/spec04.png',
+          title: 'QA Engineers',
+        },
+        {
+          image: '/assets/images/spec05.png',
+          title: 'Product Designer',
+        },
+        {
+          image: '/assets/images/spec06.png',
+          title: 'Database Admin',
+        },
+      ],
+    },
+    {
+      items: [
+        {
+          image: '/assets/images/spec07.png',
+          title: 'Angular Developers',
+        },
+        {
+          image: '/assets/images/spec08.png',
+          title: 'DevOps + DevSecOps Engineers',
+        },
+        {
+          image: '/assets/images/spec09.png',
+          title: 'PHP Developers',
+        },
+        {
+          image: '/assets/images/spec10.png',
+          title: 'Wordpress CMS Developers',
+        },
+        {
+          image: '/assets/images/spec11.png',
+          title: 'Mobile App Developers',
+        },
+      ],
+    },
+    {
+      items: [
+        {
+          image: '/assets/images/spec12.png',
+          title: 'AI and ML Engineers Deep Learning/Machine Vision/NLP',
+        },
+        {
+          image: '/assets/images/spec13.png',
+          title: 'Data Scientist / Data Engineers',
+        },
+        {
+          image: '/assets/images/spec14.png',
+          title: 'Project Managers',
+        },
+        {
+          image: '/assets/images/spec15.png',
+          title: 'Business Analyst',
+        },
+        {
+          image: '/assets/images/spec16.png',
+          title: 'Information Security Engineers',
+        },
+      ],
+    },
+    {
+      items: [
+        {
+          image: '/assets/images/spec17.png',
+          title: 'Application Security Engineers',
+        },
+        {
+          image: '/assets/images/spec18.png',
+          title: 'IOS and Android Developers',
+        },
+        {
+          image: '/assets/images/spec19.png',
+          title: 'Solution Architects',
+        },
+        {
+          image: '/assets/images/spec20.png',
+          title: 'Tech Leads / Team Leads',
+        },
+        {
+          image: '/assets/images/spec21.png',
+          title: 'Golang Dev',
+        },
+      ],
+    },
+  ],
 };
