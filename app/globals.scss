@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper {
+  @apply pb-12 #{!important};
+}
+
+.swiper-pagination-bullet {
+  @apply bg-[#9F9F9F] w-8 h-2 rounded-none #{!important};
+}

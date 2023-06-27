@@ -1,6 +1,6 @@
 'use client';
 
-import { SolutionProps, solutionsData } from '@/types';
+import { SolutionProps, SolutionsData } from '@/types';
 import { SwiperSlide } from 'swiper/react';
 import { CustomSwiper } from '../global/CustomSwiper';
 import { Solution } from './Solution';
@@ -9,7 +9,7 @@ export const Solutions = ({
   data,
   center = false,
 }: {
-  data: solutionsData;
+  data: SolutionsData;
   center?: boolean;
 }): JSX.Element => {
   return (

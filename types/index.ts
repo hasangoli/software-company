@@ -1,4 +1,4 @@
-export interface MenuItemType {
+export type MenuItemType = {
   title: string;
   href: string;
   hasBg?: boolean;
@@ -6,70 +6,76 @@ export interface MenuItemType {
     title: string;
     href: string;
   }[];
-}
+};
 
-export interface ImagePropsType {
+export type ImagePropsType = {
   src: string;
   alt: string;
   width: string;
   height?: string;
   aspectRatio?: number;
   className?: string;
-}
+};
 
-export interface hero {
+export type HeroProps = {
   image: string;
   title: string;
   description: string;
-}
+};
 
-export interface CustomLinkPropsTypes {
+export type CustomLinkPropsTypes = {
   title: string;
   href: string;
-}
+};
 
-export interface SolutionProps {
+export type SolutionProps = {
   image: string;
   title: string;
   description: string;
-}
+};
 
-export interface ProcessProps {
+export type ProcessProps = {
   number: string;
   image: string;
   title: string;
-}
+};
 
-export interface header {
+export type HeaderProps = {
   logo: string;
   data: MenuItemType[];
-}
+};
 
-export interface solutionsData {
+export type SolutionsData = {
   title: string;
   mainTitle: string;
   description: string;
   data: SolutionProps[];
-}
+};
 
-export interface processesData {
+export type ProcessesData = {
   title: string;
   mainTitle: string;
   description: string;
   data: ProcessProps[];
-}
+};
 
-export interface SpecializedProps {
+export type SpecializedProps = {
   image: string;
   title: string;
-}
+};
 
-export interface SpecializedItemProps {
+export type SpecializedItemProps = {
   items: SpecializedProps[];
-}
+};
 
-export interface SpecializedDataProps {
+export type SpecializedDataProps = {
   title: string;
   mainTitle: string;
   data: SpecializedItemProps[];
-}
+};
+
+export type TechnologiesProps = {
+  title: string;
+  mainTitle: string;
+  logos: string[];
+};

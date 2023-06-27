@@ -1,7 +1,7 @@
-import { ProcessProps, processesData } from '@/types';
+import { ProcessProps, ProcessesData } from '@/types';
 import { Process } from './Process';
 
-export const Processes = ({ data }: { data: processesData }): JSX.Element => {
+export const Processes = ({ data }: { data: ProcessesData }): JSX.Element => {
   return (
     <div className='bg-gradient'>
       <div className='container px-5 py-16 text-center'>

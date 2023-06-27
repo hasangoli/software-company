@@ -1,8 +1,18 @@
 import { Header } from '@/components/layout/Header';
 import './globals.scss';
 
-import { header } from '@/const';
 import localFont from 'next/font/local';
+import { FC, PropsWithChildren } from 'react';
+
+const getData = async () => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/global`);
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
+  }
+
+  return res.json();
+};
 
 const myFont = localFont({
   src: [
@@ -44,11 +54,9 @@ export const metadata = {
   description: 'Building Dev Team, Quickly and Affordably',
 };
 
-const RootLayout = ({
-  children,
-}: {
-  children: React.ReactNode;
-}): JSX.Element => {
+const RootLayout: FC = async ({ children }: PropsWithChildren) => {
+  const { header } = await getData();
+
   return (
     <html lang='en' className={myFont.className}>
       <body>

@@ -5,7 +5,6 @@ import { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper } from 'swiper/react';
-import '../../styles/CustomSwiper.scss';
 
 export const CustomSwiper = ({
   children,

@@ -1,6 +1,6 @@
 'use client';
 
-import { MenuItemType, header } from '@/types';
+import { HeaderProps, MenuItemType } from '@/types';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Button, Drawer } from '@mui/material';
@@ -10,7 +10,7 @@ import { CustomLink } from '../global/CustomLink';
 import { ImageProvider } from '../global/ImageProvider';
 import { MenuLi } from './MenuLi';
 
-export const Header = ({ data }: { data: header }): JSX.Element => {
+export const Header = ({ data }: { data: HeaderProps }): JSX.Element => {
   const [toggleDrawer, setToggleDrawer] = useState<boolean>(false);
 
   return (

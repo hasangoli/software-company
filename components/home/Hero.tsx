@@ -1,8 +1,8 @@
-import { hero } from '@/types';
+import { HeroProps } from '@/types';
 import { CustomLink } from '../global/CustomLink';
 import { ImageProvider } from '../global/ImageProvider';
 
-export const Hero = ({ data }: { data: hero }): JSX.Element => {
+export const Hero = ({ data }: { data: HeroProps }): JSX.Element => {
   return (
     <section className='container'>
       <div className='rounded-bl-[8rem] overflow-hidden mb-5'>
