@@ -14,13 +14,23 @@ export const Technologies = ({ data }: { data: TechnologiesProps }) => {
           {data?.mainTitle}
         </h2>
 
-        <CustomSwiper className='mt-12 mb-8' pagination={false} navigation={true}>
+        <CustomSwiper
+          className='mt-12 mb-0'
+          pagination={false}
+          navigation={true}
+        >
           {data?.logos?.map((slide: string, i: number) => (
             <SwiperSlide
               key={i}
               className='!flex !items-center !justify-center !w-full'
             >
-              <ImageProvider src={slide} width='200px' alt='' aspectRatio={1} imgClass='object-contain' />
+              <ImageProvider
+                src={slide}
+                width='200px'
+                alt=''
+                aspectRatio={1}
+                imgClass='object-contain'
+              />
             </SwiperSlide>
           ))}
         </CustomSwiper>

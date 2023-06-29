@@ -1,5 +1,10 @@
 'use client';
 
+import {
+  faChevronLeft,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PropsWithChildren } from 'react';
 import { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
@@ -40,13 +45,17 @@ export const CustomSwiper = ({
       }}
       pagination={pagination}
       modules={[Pagination, Navigation]}
-      className={className}
+      className={`relative ${className}`}
     >
       {children}
       {navigation ? (
         <>
-          <div className='prev'>prev</div>
-          <div className='next'>next</div>
+          <div className='prev text-black absolute top-1/2 text-2xl cursor-pointer -translate-y-1/2 start-0 z-10 p-5'>
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </div>
+          <div className='next text-black absolute top-1/2 text-2xl cursor-pointer -translate-y-1/2 end-0 z-10 p-5'>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </div>
         </>
       ) : (
         ''

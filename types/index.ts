@@ -80,3 +80,13 @@ export type TechnologiesProps = {
   mainTitle: string;
   logos: string[];
 };
+
+export type InputType = {
+  name: string;
+  label: string;
+  type: 'text' | 'number' | 'email' | 'date' | 'file' | 'password' | 'tel';
+  id?: string;
+  placeholder: string;
+  required?: boolean;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+};
