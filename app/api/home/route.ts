@@ -212,6 +212,19 @@ export const GET = async (request: NextRequest) => {
           '/assets/images/react-original.svg',
         ],
       },
+      clients: {
+        title: 'Clients',
+        mainTitle: 'Amazing clients who trust us',
+        logos: [
+          '/assets/images/client01.png',
+          '/assets/images/client02.png',
+          '/assets/images/client03.png',
+          '/assets/images/client04.png',
+          '/assets/images/client05.png',
+          '/assets/images/client06.png',
+          '/assets/images/client07.png',
+        ],
+      },
     },
     { status: 200 }
   );

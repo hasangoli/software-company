@@ -15,6 +15,7 @@ export type ImagePropsType = {
   height?: string;
   aspectRatio?: number;
   className?: string;
+  imgClass?: string;
 };
 
 export type HeroProps = {

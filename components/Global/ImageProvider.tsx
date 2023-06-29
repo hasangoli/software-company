@@ -9,6 +9,7 @@ export const ImageProvider: FC<ImagePropsType> = ({
   height,
   aspectRatio,
   className,
+  imgClass
 }): JSX.Element => {
   return (
     <div
@@ -19,7 +20,7 @@ export const ImageProvider: FC<ImagePropsType> = ({
         aspectRatio: aspectRatio ? aspectRatio : 'unset',
       }}
     >
-      <Image src={src} alt={alt} fill />
+      <Image src={src} alt={alt} fill className={imgClass}/>
     </div>
   );
 };

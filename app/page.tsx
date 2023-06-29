@@ -1,3 +1,4 @@
+import { Contact } from '@/components/home/Contact';
 import { Hero } from '@/components/home/Hero';
 import { Processes } from '@/components/home/Processes';
 import { Solutions } from '@/components/home/Solutions';
@@ -18,8 +19,15 @@ const getData = async () => {
 };
 
 const Home: FC = async () => {
-  const { expertise, hero, processes, solutions, specialized,technologies } =
-    await getData();
+  const {
+    expertise,
+    hero,
+    processes,
+    solutions,
+    specialized,
+    technologies,
+    clients,
+  } = await getData();
 
   return (
     <main>
@@ -29,6 +37,8 @@ const Home: FC = async () => {
       <Solutions data={expertise} center={true} />
       <Specialized data={specialized} />
       <Technologies data={technologies} />
+      <Technologies data={clients} />
+      <Contact />
     </main>
   );
 };
