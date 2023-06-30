@@ -90,3 +90,10 @@ export type InputType = {
   required?: boolean;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
 };
+
+export type CustomButtonPropsTypes = {
+  title: string;
+  type: 'button' | 'submit';
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  className?: string;
+};

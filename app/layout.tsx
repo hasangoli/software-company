@@ -1,6 +1,7 @@
 import { Header } from '@/components/layout/Header';
 import './globals.scss';
 
+import { MUIProvider } from '@/components/layout/MUIProvider';
 import localFont from 'next/font/local';
 import { FC, PropsWithChildren } from 'react';
 
@@ -59,10 +60,12 @@ const RootLayout: FC = async ({ children }: PropsWithChildren) => {
 
   return (
     <html lang='en' className={myFont.className}>
-      <body>
-        <Header data={header} />
-        {children}
-      </body>
+      <MUIProvider>
+        <body>
+          <Header data={header} />
+          {children}
+        </body>
+      </MUIProvider>
     </html>
   );
 };

@@ -2,6 +2,7 @@
 
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { CustomButton } from '../global/CustomButton';
 import { ImageProvider } from '../global/ImageProvider';
 import { Input } from '../global/Input';
 import { Textarea } from '../global/Textarea';
@@ -60,8 +61,18 @@ export const Contact = () => {
           <FormControlLabel
             value='top'
             control={<Checkbox />}
-            label='By sending this form I confirm that I have read and accept the Privacy Policy'
+            label={
+              <label className='text-primary'>
+                By sending this form I confirm that I have read and accept the
+                <strong> Privacy Policy</strong>
+              </label>
+            }
             onChange={(_, checked) => console.log(checked)}
+          />
+          <CustomButton
+            title='GET CONSULTATION'
+            type='submit'
+            className='mt-8'
           />
         </form>
       </div>
