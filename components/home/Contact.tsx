@@ -9,20 +9,21 @@ import { Textarea } from '../global/Textarea';
 
 export const Contact = () => {
   return (
-    <div>
-      <ImageProvider
-        src='/assets/images/contact.png'
-        alt=''
-        width='100%'
-        height='550px'
-        imgClass='object-cover'
-        className='rounded-se-[7rem] overflow-hidden'
-      />
-      <div className='container w-11/12 mx-auto px-6 py-8 translate-y-[-11rem] bg-white'>
-        <h2 className='capitalize text-primary text-4xl font-semibold'>
+    <div className='mb-12'>
+      <div className='relative'>
+        <ImageProvider
+          src='/assets/images/contact.png'
+          alt=''
+          width='100%'
+          height='550px'
+          imgClass='object-cover'
+          className='rounded-se-[7rem] overflow-hidden'
+        />
+        <h2 className='capitalize text-primary text-[2.5rem] absolute bottom-0 px-6 pt-8 mx-6 bg-white'>
           Connect with your next great hire today!
         </h2>
-
+      </div>
+      <div className='container w-11/12 mx-auto px-6 py-8 bg-white'>
         <form onSubmit={e => e.preventDefault()}>
           <Input
             type='text'

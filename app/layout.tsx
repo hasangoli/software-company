@@ -1,6 +1,7 @@
 import { Header } from '@/components/layout/Header';
 import './globals.scss';
 
+import { Footer } from '@/components/layout/Footer';
 import { MUIProvider } from '@/components/layout/MUIProvider';
 import localFont from 'next/font/local';
 import { FC, PropsWithChildren } from 'react';
@@ -56,7 +57,7 @@ export const metadata = {
 };
 
 const RootLayout: FC = async ({ children }: PropsWithChildren) => {
-  const { header } = await getData();
+  const { header, footer } = await getData();
 
   return (
     <html lang='en' className={myFont.className}>
@@ -64,6 +65,7 @@ const RootLayout: FC = async ({ children }: PropsWithChildren) => {
         <body>
           <Header data={header} />
           {children}
+          <Footer data={footer} />
         </body>
       </MUIProvider>
     </html>

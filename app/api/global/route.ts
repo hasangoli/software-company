@@ -45,6 +45,46 @@ export const GET = async (request: NextRequest) => {
           },
         ],
       },
+      footer: {
+        logo: '/assets/images/logo.png',
+        description:
+          'Expertly trained, battle-tested, elite software developers on demand',
+        tel: {
+          title: '094713249222',
+          icon: '/assets/images/Phone.svg',
+        },
+        email: {
+          title: 'hello@courtney.lk',
+          icon: '/assets/images/Email.svg',
+        },
+        address: {
+          title:
+            'Courtney Lanka (Private) LimitedLevel 35World Trade CenterColombo 01',
+          icon: '/assets/images/Location.svg',
+        },
+        socials: [
+          {
+            link: '#',
+            icon: '/assets/images/Linkedin.svg',
+          },
+          {
+            link: '#',
+            icon: '/assets/images/Facebook.svg',
+          },
+          {
+            link: '#',
+            icon: '/assets/images/Instagram.svg',
+          },
+          {
+            link: '#',
+            icon: '/assets/images/Twitter.svg',
+          },
+          {
+            link: '#',
+            icon: '/assets/images/Youtube.svg',
+          },
+        ],
+      },
     },
     { status: 200 }
   );

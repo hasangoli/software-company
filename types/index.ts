@@ -97,3 +97,22 @@ export type CustomButtonPropsTypes = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   className?: string;
 };
+
+export type SocialProps = {
+  link: string;
+  icon: string;
+};
+
+export type FooterItemProps = {
+  title: string;
+  icon: string;
+};
+
+export type FooterProps = {
+  logo: string;
+  description: string;
+  tel: FooterItemProps;
+  email: FooterItemProps;
+  address: FooterItemProps;
+  socials: SocialProps[];
+};

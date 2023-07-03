@@ -12,18 +12,6 @@ export const MUIProvider: FC<PropsWithChildren> = ({ children }) => {
       secondary: {
         main: 'rgb(255, 248, 86)',
       },
-      // gray: {
-      //   main: 'rgb(249, 249, 249)',
-      // },
-      // white: {
-      //   main: 'rgb(255 ,255 ,255)',
-      // },
-      // black: {
-      //   main: 'rgb(0 ,0 ,0)',
-      // },
-      // transparent: {
-      //   main: 'rgba(0, 0, 0, 0)',
-      // },
     },
   });
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
