@@ -25,6 +25,9 @@ module.exports = {
       black: 'rgb(0 ,0 ,0)',
       transparent: 'rgba(0, 0, 0, 0)',
     },
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         poppins: ['Poppins'],
