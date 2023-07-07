@@ -14,10 +14,8 @@ export const Solutions = ({
 }): JSX.Element => {
   return (
     <section className='container px-5 py-16'>
-      <p className='text-primary font-black mb-5 text-lg'>{data?.title}</p>
-      <h2 className='text-primary text-4xl font-black mb-5'>
-        {data?.mainTitle}
-      </h2>
+      <p className='text-primary font-900 mb-5 text-lg'>{data?.title}</p>
+      <h2 className='text-primary text-4xl font-900 mb-5'>{data?.mainTitle}</h2>
       <p className='text-primary text-2xl'>{data?.description}</p>
 
       <CustomSwiper className='mt-12 mb-8'>

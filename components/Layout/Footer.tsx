@@ -60,6 +60,36 @@ export const Footer = ({ data }: { data: FooterProps }): JSX.Element => {
               </li>
             </ul>
           </div>
+          {data?.links?.map((side, i) => (
+            <div key={i}>
+              <p className='text-primary text-lg font-500 mb-3'>
+                {side?.title}
+              </p>
+              <ul className='mb-8'>
+                {side?.children?.map((link, i) => (
+                  <li key={i} className='py-3'>
+                    <Link className='text-primary' href={link?.href}>
+                      {link?.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          <p className='text-primary text-lg font-semibold'>Follow Us</p>
+          <div className='grid grid-cols-5 my-3'>
+            {data?.socials?.map((social, i) => (
+              <Link key={i} href={social?.link}>
+                <ImageProvider
+                  src={social?.icon}
+                  alt=''
+                  width='46px'
+                  aspectRatio={1}
+                />
+              </Link>
+            ))}
+          </div>
+          <p className='text-primary my-5'>Ⓒ {new Date().getFullYear()} HasanDev</p>
         </div>
       </div>
     </footer>

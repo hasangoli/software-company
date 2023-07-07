@@ -11,7 +11,7 @@ export const Process = ({ data }: { data: ProcessProps }): JSX.Element => {
         aspectRatio={1}
         className='mb-3'
       />
-      <p className='text-primary font-black text-3xl uppercase'>
+      <p className='text-primary font-900 text-3xl uppercase'>
         <span className='me-4 text-5xl'>{data?.number}</span>
         {data?.title}
       </p>

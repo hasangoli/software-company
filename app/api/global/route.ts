@@ -62,6 +62,75 @@ export const GET = async (request: NextRequest) => {
             'Courtney Lanka (Private) LimitedLevel 35World Trade CenterColombo 01',
           icon: '/assets/images/Location.svg',
         },
+        links: [
+          {
+            title: 'Company',
+            children: [
+              {
+                title: 'About Us',
+                href: '#',
+              },
+              {
+                title: 'Success Stories',
+                href: '#',
+              },
+              {
+                title: 'Privacy policy',
+                href: '#',
+              },
+              {
+                title: 'Terms & Conditions',
+                href: '#',
+              },
+              {
+                title: 'Contact Us',
+                href: '#',
+              },
+            ],
+          },
+          {
+            title: 'Services',
+            children: [
+              {
+                title: 'Hire Permanent Staff',
+                href: '#',
+              },
+              {
+                title: 'Staff Augmentation',
+                href: '#',
+              },
+              {
+                title: 'Software Outsourcing',
+                href: '#',
+              },
+              {
+                title: 'Build Remote Office',
+                href: '#',
+              },
+            ],
+          },
+          {
+            title: 'How to Start',
+            children: [
+              {
+                title: 'You Asked',
+                href: '#',
+              },
+              {
+                title: 'We Proceed',
+                href: '#',
+              },
+              {
+                title: 'Negotiate',
+                href: '#',
+              },
+              {
+                title: 'You Get',
+                href: '#',
+              },
+            ],
+          },
+        ],
         socials: [
           {
             link: '#',

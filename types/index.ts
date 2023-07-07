@@ -114,5 +114,12 @@ export type FooterProps = {
   tel: FooterItemProps;
   email: FooterItemProps;
   address: FooterItemProps;
+  links: {
+    title: string;
+    children: {
+      title: string;
+      href: string;
+    }[];
+  }[];
   socials: SocialProps[];
 };

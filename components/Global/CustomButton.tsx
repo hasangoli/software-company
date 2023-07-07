@@ -14,7 +14,7 @@ export const CustomButton: FC<CustomButtonPropsTypes> = ({
     <button
       type={type}
       onClick={onClick}
-      className={`block bg-gradient text-white w-full text-center p-3 rounded-lg font-bold ${
+      className={`block bg-gradient text-white w-full text-center p-3 rounded-lg font-700 ${
         className ? className : ''
       }`}
     >
