@@ -10,7 +10,7 @@ export const MenuLi = ({ item }: { item: MenuItemType }): JSX.Element => {
 
   return (
     <li
-      className={`pb-16 text-4xl font-700 ${
+      className={`pb-16 text-4xl font-600 ${
         item?.hasBg
           ? 'bg-gradient text-transparent bg-clip-text'
           : 'text-primary'

@@ -16,40 +16,40 @@ const getData = async () => {
   return res.json();
 };
 
-const myFont = localFont({
-  src: [
-    {
-      path: './Poppins-ExtraLight.ttf',
-      weight: '100',
-      style: 'normal',
-    },
-    {
-      path: './Poppins-Light.ttf',
-      weight: '200',
-      style: 'normal',
-    },
-    {
-      path: './Poppins-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: './Poppins-Bold.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: './Poppins-ExtraBold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: './Poppins-Black.ttf',
-      weight: '900',
-      style: 'normal',
-    },
-  ],
-});
+// const myFont = localFont({
+//   src: [
+//     {
+//       path: './Poppins-ExtraLight.ttf',
+//       weight: '100',
+//       style: 'normal',
+//     },
+//     {
+//       path: './Poppins-Light.ttf',
+//       weight: '200',
+//       style: 'normal',
+//     },
+//     {
+//       path: './Poppins-Regular.ttf',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//     {
+//       path: './Poppins-Bold.ttf',
+//       weight: '500',
+//       style: 'normal',
+//     },
+//     {
+//       path: './Poppins-ExtraBold.ttf',
+//       weight: '700',
+//       style: 'normal',
+//     },
+//     {
+//       path: './Poppins-Black.ttf',
+//       weight: '900',
+//       style: 'normal',
+//     },
+//   ],
+// });
 
 export const metadata = {
   title: 'Courtney Lanka',
@@ -60,7 +60,8 @@ const RootLayout: FC = async ({ children }: PropsWithChildren) => {
   const { header, footer } = await getData();
 
   return (
-    <html lang='en' className={myFont.className}>
+    // <html lang='en' className={myFont.className}>
+    <html lang='en' className='font-poppins'>
       <MUIProvider>
         <body>
           <Header data={header} />

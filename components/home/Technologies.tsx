@@ -10,7 +10,7 @@ export const Technologies = ({ data }: { data: TechnologiesProps }) => {
     <section className='bg-gray'>
       <div className='container px-5 py-16'>
         <p className='text-primary text-center mb-5 text-2xl'>{data?.title}</p>
-        <h2 className='text-primary text-center text-4xl mb-5'>
+        <h2 className='text-primary text-center font-700 text-4xl mb-5'>
           {data?.mainTitle}
         </h2>
 

@@ -5,9 +5,11 @@ export const Processes = ({ data }: { data: ProcessesData }): JSX.Element => {
   return (
     <div className='bg-gradient'>
       <div className='container px-5 py-16 text-center'>
-        <p className='text-white text-xl font-700 mb-8'>{data?.title}</p>
-        <h3 className='text-white text-4xl font-900 mb-6'>{data?.mainTitle}</h3>
-        <p className='w-[250px] mx-auto text-primary'>{data?.description}</p>
+        <p className='text-white text-xl font-600 mb-8'>{data?.title}</p>
+        <h3 className='text-white text-4xl font-700 mb-6'>{data?.mainTitle}</h3>
+        <p className='w-[250px] mx-auto text-primary text-lg'>
+          {data?.description}
+        </p>
 
         {data?.data?.map((item: ProcessProps, i: number) => (
           <Process key={i} data={item} />

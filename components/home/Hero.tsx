@@ -14,9 +14,9 @@ export const Hero = ({ data }: { data: HeroProps }): JSX.Element => {
         />
       </div>
       <div className='p-5'>
-        <h1 className='text-4xl mb-5 text-primary font-900'>{data?.title}</h1>
-        <p className='text-xl mb-8'>{data?.description}</p>
-        <CustomLink title='Build a team' href='/' />
+        <h1 className='text-4xl mb-5 text-primary font-700'>{data?.title}</h1>
+        <p className='text-xl text-primary mb-8'>{data?.description}</p>
+        <CustomLink title='Build a team' href='#' />
       </div>
     </section>
   );

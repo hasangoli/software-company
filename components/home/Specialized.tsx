@@ -9,8 +9,8 @@ export const Specialized = ({ data }: { data: SpecializedDataProps }) => {
   return (
     <section className='bg-gray'>
       <div className='container px-5 py-16'>
-        <p className='text-primary font-900 mb-5 text-lg'>{data?.title}</p>
-        <h2 className='text-primary text-4xl font-900 mb-5'>
+        <p className='text-primary font-700 mb-5 text-lg'>{data?.title}</p>
+        <h2 className='text-primary text-4xl font-700 mb-5'>
           {data?.mainTitle}
         </h2>
 

@@ -17,7 +17,7 @@ export const Solution = ({
         aspectRatio={1}
         className='bg-secondary mx-auto rounded-lg overflow-hidden'
       />
-      <h4 className='text-primary text-3xl font-900 my-6'>{data?.title}</h4>
+      <h4 className='text-primary text-3xl font-600 my-6'>{data?.title}</h4>
       <p className='text-primary text-lg'>{data?.description}</p>
     </div>
   );

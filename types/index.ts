@@ -108,18 +108,22 @@ export type FooterItemProps = {
   icon: string;
 };
 
+export type FooterLink = {
+  title: string;
+  href: string;
+};
+
+export type FooterSide = {
+  title: string;
+  children: FooterLink[];
+};
+
 export type FooterProps = {
   logo: string;
   description: string;
   tel: FooterItemProps;
   email: FooterItemProps;
   address: FooterItemProps;
-  links: {
-    title: string;
-    children: {
-      title: string;
-      href: string;
-    }[];
-  }[];
+  links: FooterSide[];
   socials: SocialProps[];
 };

@@ -1,4 +1,4 @@
-import { FooterProps } from '@/types';
+import { FooterLink, FooterProps, FooterSide, SocialProps } from '@/types';
 import Link from 'next/link';
 import { ImageProvider } from '../global/ImageProvider';
 
@@ -8,7 +8,7 @@ export const Footer = ({ data }: { data: FooterProps }): JSX.Element => {
       <div className='w-full h-[2px] bg-black/30 rounded-full'></div>
       <div className='mt-20'>
         <div className='grid grid-cols-1'>
-          <div>
+          <div className='mb-3'>
             <Link href='/'>
               <ImageProvider
                 src={data?.logo}
@@ -60,13 +60,13 @@ export const Footer = ({ data }: { data: FooterProps }): JSX.Element => {
               </li>
             </ul>
           </div>
-          {data?.links?.map((side, i) => (
+          {data?.links?.map((side: FooterSide, i: number) => (
             <div key={i}>
-              <p className='text-primary text-lg font-500 mb-3'>
+              <p className='text-primary text-lg font-700 mb-3'>
                 {side?.title}
               </p>
               <ul className='mb-8'>
-                {side?.children?.map((link, i) => (
+                {side?.children?.map((link: FooterLink, i: number) => (
                   <li key={i} className='py-3'>
                     <Link className='text-primary' href={link?.href}>
                       {link?.title}
@@ -78,7 +78,7 @@ export const Footer = ({ data }: { data: FooterProps }): JSX.Element => {
           ))}
           <p className='text-primary text-lg font-semibold'>Follow Us</p>
           <div className='grid grid-cols-5 my-3'>
-            {data?.socials?.map((social, i) => (
+            {data?.socials?.map((social: SocialProps, i: number) => (
               <Link key={i} href={social?.link}>
                 <ImageProvider
                   src={social?.icon}
@@ -89,7 +89,9 @@ export const Footer = ({ data }: { data: FooterProps }): JSX.Element => {
               </Link>
             ))}
           </div>
-          <p className='text-primary my-5'>Ⓒ {new Date().getFullYear()} HasanDev</p>
+          <p className='text-primary my-5'>
+            Ⓒ {new Date().getFullYear()} HasanDev
+          </p>
         </div>
       </div>
     </footer>

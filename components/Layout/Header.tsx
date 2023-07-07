@@ -53,7 +53,7 @@ export const Header = ({ data }: { data: HeaderProps }): JSX.Element => {
             ))}
           </ul>
           <div className='flex items-center justify-center'>
-            <CustomLink title='Build a team' href='/' />
+            <CustomLink title='Build a team' href='#' />
           </div>
         </nav>
       </Drawer>

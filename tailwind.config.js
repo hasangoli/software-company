@@ -26,6 +26,9 @@ module.exports = {
       transparent: 'rgba(0, 0, 0, 0)',
     },
     extend: {
+      fontFamily: {
+        poppins: ['Poppins'],
+      },
       backgroundImage: {
         gradient:
           'linear-gradient(90deg, rgb(255, 153, 0) 0%, rgb(242, 203, 0) 100%)',
